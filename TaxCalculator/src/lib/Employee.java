@@ -8,22 +8,10 @@ import java.util.Date;
 
 public class Employee {
 
-	private String employeeId;
-	private String firstName;
-	private String lastName;
-	private String idNumber;
-	private String address;
-
-	private Date dateJoined;
-	private int monthWorkingInYear;
-	
-	private boolean isForeigner;
-	private boolean gender; //true = Laki-laki, false = Perempuan
-	
 	private int monthlySalary;
 	private int otherMonthlyIncome;
 	private int annualDeductible;
-	
+
 	private String spouseName;
 	private String spouseIdNumber;
 
