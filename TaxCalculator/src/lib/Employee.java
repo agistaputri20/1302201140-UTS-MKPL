@@ -6,8 +6,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Date;
 
-public class Employee {
+public class Employee extends Person{
 
+	private int monthWorkingInYear;
 	private int monthlySalary;
 	private int otherMonthlyIncome;
 	private int annualDeductible;
@@ -18,15 +19,15 @@ public class Employee {
 	private List<String> childNames;
 	private List<String> childIdNumbers;
 	
-	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, Date dateJoined, boolean isForeigner, boolean gender) {
-		this.employeeId = employeeId;
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.idNumber = idNumber;
-		this.address = address;
-		this.dateJoined = dateJoined;
-		this.isForeigner = isForeigner;
-		this.gender = gender;
+	public Employee(Person person) {
+		this.employeeId = person.getEmployeeId;
+		this.firstName = person.getFirstName;
+		this.lastName = person.getLastName;
+		this.idNumber = person.getIdNumber;
+		this.address = person.getAddress;
+		this.dateJoined = person.getDateJoined;
+		this.isForeigner = person.isForeigner;
+		this.gender = person.isGender;
 		
 		childNames = new LinkedList<String>();
 		childIdNumbers = new LinkedList<String>();

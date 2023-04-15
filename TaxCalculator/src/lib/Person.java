@@ -8,9 +8,8 @@ public class Person {
     private String lastName;
     private String idNumber;
     private String address;
-
     private Date dateJoined;
-    private int monthWorkingInYear;
+
 
     private boolean isForeigner;
     private boolean gender; //true = Laki-laki, false = Perempuan
@@ -61,14 +60,6 @@ public class Person {
 
     public void setDateJoined(Date dateJoined) {
         this.dateJoined = dateJoined;
-    }
-
-    public int getMonthWorkingInYear() {
-        return monthWorkingInYear;
-    }
-
-    public void setMonthWorkingInYear(int monthWorkingInYear) {
-        this.monthWorkingInYear = monthWorkingInYear;
     }
 
     public boolean isForeigner() {
